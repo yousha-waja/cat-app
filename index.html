@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Cat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+
+        <figure>
+          <figcaption id="fig">
+            Click on the cute kitty below to see our gallery of cats.
+          </figcaption>
+          <a href="https://freecatphotoapp.com"
+            ><img
+              class="catFace"
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+              alt="A cute orange cat lying on its back."
+          /></a>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>
+            <figure>
+              <figcaption>Cat nip</figcaption>
+              <img
+                class="catLove"
+                src="images/catnip.jpeg"
+                alt="A cat smelling the plant that is used to make catnip."
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>Lasers</figcaption>
+              <img
+                class="catLove"
+                src="images\cat-laser.jpeg"
+                alt="cat playing with Lasers"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>Lasagna</figcaption>
+              <img
+                class="catLove"
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                alt="A slice of lasagna on a plate."
+              />
+            </figure>
+          </li>
+        </ul>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>
+            <figure>
+              <figcaption>Flea treatment</figcaption>
+              <img
+                class="catLove"
+                src="images/cat-flea-treatment.jpeg"
+                alt="cat receiving flee treatment"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>Thunder</figcaption>
+              <img
+                class="catLove"
+                src="images/cat-scared.jpeg"
+                alt="A cat under the blanket scared of lightning"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>Other cats</figcaption>
+              <img
+                src="images/cat-fighting.jpeg"
+                alt="Five cats looking around a field."
+              />
+            </figure>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Indoor</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Outdoor</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
