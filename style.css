@@ -68,7 +68,7 @@ button {
     background-color: rgba(199, 97, 19, 0.2); 
 }
 
-@media (min-width:50em){
+@media (min-width:960px){
     .container-flex {
         display: flex;
        justify-content: center;
