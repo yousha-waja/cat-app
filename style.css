@@ -50,9 +50,28 @@ li {
 
 .catLove {
     border-radius: 5%;
-    width: 10cm;
-    height: 10cm;
+    min-width: 50dvh;
+    min-height: 60dvh;
+    height: 10px;
+    width: 50%;
     object-fit: cover;
 }
 
 
+
+fieldset  {
+    background-color: rgba(199, 97, 19, 0.2);
+    border: none;
+}
+
+button {
+    background-color: rgba(199, 97, 19, 0.2); 
+}
+
+@media (min-width:50em){
+    .container-flex {
+        display: flex;
+       justify-content: center;
+        gap: 1em;
+    }
+}
